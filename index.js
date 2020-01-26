@@ -1,15 +1,5 @@
 const http = require("http"); //common js model,es6 supported by v13
-const url=require("url");
-
-const getQueryString=urlString=>{
-    try{
-        return url.parse(urlString,true).query;
-
-    }catch(e){
-        console.error(e);
-        return {};
-    }
-};
+const getQueryString=require("./getQueryString");
 
 //process has methods(of that module) ,properties,functions
 
