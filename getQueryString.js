@@ -9,4 +9,5 @@ const getQueryString=urlString=>{
         return {};
     }
 };
-//module exports
+//return parameter : key n value like a func but exported so called module
+module.exports = getQueryString;
